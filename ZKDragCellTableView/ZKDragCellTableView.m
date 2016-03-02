@@ -15,10 +15,10 @@ typedef NS_ENUM(NSUInteger, snapshotMeetsEdge) {
 @interface ZKDragCellTableView()
 
 @property (nonatomic, weak) UIView *snapshot;
-@property (nonatomic, strong) NSIndexPath *originalIndexPath; // 原始的位置
+@property (nonatomic, strong) NSIndexPath *originalIndexPath;  // 原始的位置
 @property (nonatomic, strong) NSIndexPath *relocatedIndexPath; // 移动后的位置
-@property (nonatomic, assign) CGPoint fingerLocation; // 手指的位置
-@property (nonatomic, strong) CADisplayLink *autoScrollTimer; // 定时器 用于自动上下滑动
+@property (nonatomic, assign) CGPoint fingerLocation;          // 手指的位置
+@property (nonatomic, strong) CADisplayLink *autoScrollTimer;  // 定时器 用于自动上下滑动
 @property (nonatomic, assign) snapshotMeetsEdge autoScrollDirection;
 
 @end

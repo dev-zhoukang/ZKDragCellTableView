@@ -6,32 +6,90 @@
 //  Copyright © 2016年 ZK. All rights reserved.
 //
 
-#import "ZKMainViewController.h"
+#define ZKColor(r,g,b,a) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:a]
+#define ZKRandomColor ZKColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), 1)
 
-@interface ZKMainViewController ()
+#import "ZKMainViewController.h"
+#import "ZKDragCellTableView.h"
+#import "ZKModel.h"
+#import "ZKCell.h"
+
+@interface ZKMainViewController () <ZKDragCellTableViewDataSource, ZKDragCellTableViewDelegate>
+
+@property (nonatomic, strong) ZKDragCellTableView *tableView;
+@property (nonatomic, strong) NSArray *dataSource;
 
 @end
 
 @implementation ZKMainViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self p_setupTableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)p_setupTableView
+{
+    self.tableView = ({
+        self.tableView = [[ZKDragCellTableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStyleGrouped];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [self.view addSubview:_tableView];
+        _tableView;
+    });
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - <UITableViewDataSource>
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return self.dataSource.count;
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.dataSource[section] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZKCell *cell = [ZKCell cellWithTableView:tableView];
+    cell.model = self.dataSource[indexPath.section][indexPath.row];
+    return cell;
+}
+
+/** 数据源加载 */
+- (NSArray *)dataSource
+{
+    if (!_dataSource) {
+        NSMutableArray *array = [NSMutableArray array];
+        NSInteger numOfSecctions = 7;
+        for (NSInteger i = 0; i < numOfSecctions; i ++) {
+            UIColor *color = ZKRandomColor;
+            NSMutableArray *tempArray = [NSMutableArray array];
+            for (NSInteger j = 0; j < 20; j ++) {
+                ZKModel *model = [[ZKModel alloc] init];
+                model.color = color;
+                model.title = [NSString stringWithFormat:@"第%zd组-第%zd行",i,j];
+                [tempArray addObject:model];
+            }
+            [array addObject:tempArray];
+        }
+        _dataSource = array;
+    }
+    return _dataSource;
+}
+
+// <ZKDragCellTableViewDataSource, ZKDragCellTableViewDelegate>
+- (NSArray *)originalDataSourceForTableView:(ZKDragCellTableView *)tableView
+{
+    return _dataSource;
+}
+
+- (void)tableView:(ZKDragCellTableView *)tableView newDataSource:(NSArray *)newDataSource
+{
+    self.dataSource = newDataSource;
+}
 
 @end

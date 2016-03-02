@@ -11,7 +11,7 @@
 
 @protocol ZKDragCellTableViewDataSource <UITableViewDataSource>
 @required
-/**获取外部的原始的数据源*/
+/** 获取外部的原始的数据源 */
 - (NSArray *)originalDataSourceForTableView:(ZKDragCellTableView *)tableView;
 @end
 
@@ -25,8 +25,10 @@
 - (void)cellDidEndMovingInTableView:(ZKDragCellTableView *)tableView;
 @end
 
+
 @interface ZKDragCellTableView : UITableView
 
 @property (nonatomic, weak) id <ZKDragCellTableViewDataSource> dataSource;
 @property (nonatomic, weak) id <ZKDragCellTableViewDelegate> delegate;
+
 @end

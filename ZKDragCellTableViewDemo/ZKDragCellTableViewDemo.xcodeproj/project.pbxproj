@@ -14,8 +14,9 @@
 		5830DFF31C8693180074744F /* ZKDragCellTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830DFF21C8693180074744F /* ZKDragCellTableViewDemoTests.m */; };
 		5830DFFE1C8693180074744F /* ZKDragCellTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830DFFD1C8693180074744F /* ZKDragCellTableViewDemoUITests.m */; };
 		5830E00F1C8693910074744F /* ZKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830E00D1C8693910074744F /* ZKMainViewController.m */; };
-		5830E0101C8693910074744F /* ZKMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5830E00E1C8693910074744F /* ZKMainViewController.xib */; };
 		5830E0141C8694330074744F /* ZKDragCellTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830E0131C8694330074744F /* ZKDragCellTableView.m */; };
+		5830E0171C8697CD0074744F /* ZKCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830E0161C8697CD0074744F /* ZKCell.m */; };
+		5830E01A1C8697DC0074744F /* ZKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830E0191C8697DC0074744F /* ZKModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +52,12 @@
 		5830DFFF1C8693180074744F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5830E00C1C8693910074744F /* ZKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKMainViewController.h; sourceTree = "<group>"; };
 		5830E00D1C8693910074744F /* ZKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKMainViewController.m; sourceTree = "<group>"; };
-		5830E00E1C8693910074744F /* ZKMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKMainViewController.xib; sourceTree = "<group>"; };
 		5830E0121C8694330074744F /* ZKDragCellTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKDragCellTableView.h; sourceTree = "<group>"; };
 		5830E0131C8694330074744F /* ZKDragCellTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKDragCellTableView.m; sourceTree = "<group>"; };
+		5830E0151C8697CD0074744F /* ZKCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKCell.h; sourceTree = "<group>"; };
+		5830E0161C8697CD0074744F /* ZKCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKCell.m; sourceTree = "<group>"; };
+		5830E0181C8697DC0074744F /* ZKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKModel.h; sourceTree = "<group>"; };
+		5830E0191C8697DC0074744F /* ZKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,10 @@
 			children = (
 				5830E00C1C8693910074744F /* ZKMainViewController.h */,
 				5830E00D1C8693910074744F /* ZKMainViewController.m */,
-				5830E00E1C8693910074744F /* ZKMainViewController.xib */,
+				5830E0151C8697CD0074744F /* ZKCell.h */,
+				5830E0161C8697CD0074744F /* ZKCell.m */,
+				5830E0181C8697DC0074744F /* ZKModel.h */,
+				5830E0191C8697DC0074744F /* ZKModel.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -267,7 +274,6 @@
 			files = (
 				5830DFE81C8693170074744F /* LaunchScreen.storyboard in Resources */,
 				5830DFE51C8693170074744F /* Assets.xcassets in Resources */,
-				5830E0101C8693910074744F /* ZKMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5830E01A1C8697DC0074744F /* ZKModel.m in Sources */,
 				5830DFDD1C8693170074744F /* AppDelegate.m in Sources */,
 				5830DFDA1C8693170074744F /* main.m in Sources */,
 				5830E0141C8694330074744F /* ZKDragCellTableView.m in Sources */,
+				5830E0171C8697CD0074744F /* ZKCell.m in Sources */,
 				5830E00F1C8693910074744F /* ZKMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +521,7 @@
 				5830E0041C8693180074744F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5830E0051C8693180074744F /* Build configuration list for PBXNativeTarget "ZKDragCellTableViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +530,7 @@
 				5830E0071C8693180074744F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5830E0081C8693180074744F /* Build configuration list for PBXNativeTarget "ZKDragCellTableViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +539,7 @@
 				5830E00A1C8693180074744F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
