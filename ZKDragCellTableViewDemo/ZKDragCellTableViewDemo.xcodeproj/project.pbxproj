@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5830DFDA1C8693170074744F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830DFD91C8693170074744F /* main.m */; };
+		5830DFDD1C8693170074744F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830DFDC1C8693170074744F /* AppDelegate.m */; };
+		5830DFE51C8693170074744F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5830DFE41C8693170074744F /* Assets.xcassets */; };
+		5830DFE81C8693170074744F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5830DFE61C8693170074744F /* LaunchScreen.storyboard */; };
+		5830DFF31C8693180074744F /* ZKDragCellTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830DFF21C8693180074744F /* ZKDragCellTableViewDemoTests.m */; };
+		5830DFFE1C8693180074744F /* ZKDragCellTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830DFFD1C8693180074744F /* ZKDragCellTableViewDemoUITests.m */; };
+		5830E00F1C8693910074744F /* ZKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830E00D1C8693910074744F /* ZKMainViewController.m */; };
+		5830E0101C8693910074744F /* ZKMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5830E00E1C8693910074744F /* ZKMainViewController.xib */; };
+		5830E0141C8694330074744F /* ZKDragCellTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5830E0131C8694330074744F /* ZKDragCellTableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5830DFEF1C8693180074744F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5830DFCD1C8693170074744F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5830DFD41C8693170074744F;
+			remoteInfo = ZKDragCellTableViewDemo;
+		};
+		5830DFFA1C8693180074744F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5830DFCD1C8693170074744F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5830DFD41C8693170074744F;
+			remoteInfo = ZKDragCellTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5830DFD51C8693170074744F /* ZKDragCellTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKDragCellTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5830DFD91C8693170074744F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5830DFDB1C8693170074744F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5830DFDC1C8693170074744F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5830DFE41C8693170074744F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5830DFE71C8693170074744F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5830DFE91C8693170074744F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5830DFEE1C8693180074744F /* ZKDragCellTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKDragCellTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5830DFF21C8693180074744F /* ZKDragCellTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKDragCellTableViewDemoTests.m; sourceTree = "<group>"; };
+		5830DFF41C8693180074744F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5830DFF91C8693180074744F /* ZKDragCellTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKDragCellTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5830DFFD1C8693180074744F /* ZKDragCellTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKDragCellTableViewDemoUITests.m; sourceTree = "<group>"; };
+		5830DFFF1C8693180074744F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5830E00C1C8693910074744F /* ZKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKMainViewController.h; sourceTree = "<group>"; };
+		5830E00D1C8693910074744F /* ZKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKMainViewController.m; sourceTree = "<group>"; };
+		5830E00E1C8693910074744F /* ZKMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKMainViewController.xib; sourceTree = "<group>"; };
+		5830E0121C8694330074744F /* ZKDragCellTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKDragCellTableView.h; sourceTree = "<group>"; };
+		5830E0131C8694330074744F /* ZKDragCellTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKDragCellTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5830DFD21C8693170074744F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830DFEB1C8693180074744F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830DFF61C8693180074744F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5830DFCC1C8693170074744F = {
+			isa = PBXGroup;
+			children = (
+				5830DFD71C8693170074744F /* ZKDragCellTableViewDemo */,
+				5830DFF11C8693180074744F /* ZKDragCellTableViewDemoTests */,
+				5830DFFC1C8693180074744F /* ZKDragCellTableViewDemoUITests */,
+				5830DFD61C8693170074744F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5830DFD61C8693170074744F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5830DFD51C8693170074744F /* ZKDragCellTableViewDemo.app */,
+				5830DFEE1C8693180074744F /* ZKDragCellTableViewDemoTests.xctest */,
+				5830DFF91C8693180074744F /* ZKDragCellTableViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5830DFD71C8693170074744F /* ZKDragCellTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5830DFDB1C8693170074744F /* AppDelegate.h */,
+				5830DFDC1C8693170074744F /* AppDelegate.m */,
+				5830E0111C8694330074744F /* ZKDragCellTableView */,
+				5830E00B1C8693790074744F /* Classes */,
+				5830DFD81C8693170074744F /* Supporting Files */,
+			);
+			path = ZKDragCellTableViewDemo;
+			sourceTree = "<group>";
+		};
+		5830DFD81C8693170074744F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5830DFE41C8693170074744F /* Assets.xcassets */,
+				5830DFE61C8693170074744F /* LaunchScreen.storyboard */,
+				5830DFE91C8693170074744F /* Info.plist */,
+				5830DFD91C8693170074744F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5830DFF11C8693180074744F /* ZKDragCellTableViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5830DFF21C8693180074744F /* ZKDragCellTableViewDemoTests.m */,
+				5830DFF41C8693180074744F /* Info.plist */,
+			);
+			path = ZKDragCellTableViewDemoTests;
+			sourceTree = "<group>";
+		};
+		5830DFFC1C8693180074744F /* ZKDragCellTableViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5830DFFD1C8693180074744F /* ZKDragCellTableViewDemoUITests.m */,
+				5830DFFF1C8693180074744F /* Info.plist */,
+			);
+			path = ZKDragCellTableViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		5830E00B1C8693790074744F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5830E00C1C8693910074744F /* ZKMainViewController.h */,
+				5830E00D1C8693910074744F /* ZKMainViewController.m */,
+				5830E00E1C8693910074744F /* ZKMainViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5830E0111C8694330074744F /* ZKDragCellTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5830E0121C8694330074744F /* ZKDragCellTableView.h */,
+				5830E0131C8694330074744F /* ZKDragCellTableView.m */,
+			);
+			name = ZKDragCellTableView;
+			path = ../../ZKDragCellTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5830DFD41C8693170074744F /* ZKDragCellTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5830E0021C8693180074744F /* Build configuration list for PBXNativeTarget "ZKDragCellTableViewDemo" */;
+			buildPhases = (
+				5830DFD11C8693170074744F /* Sources */,
+				5830DFD21C8693170074744F /* Frameworks */,
+				5830DFD31C8693170074744F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZKDragCellTableViewDemo;
+			productName = ZKDragCellTableViewDemo;
+			productReference = 5830DFD51C8693170074744F /* ZKDragCellTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5830DFED1C8693180074744F /* ZKDragCellTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5830E0051C8693180074744F /* Build configuration list for PBXNativeTarget "ZKDragCellTableViewDemoTests" */;
+			buildPhases = (
+				5830DFEA1C8693180074744F /* Sources */,
+				5830DFEB1C8693180074744F /* Frameworks */,
+				5830DFEC1C8693180074744F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5830DFF01C8693180074744F /* PBXTargetDependency */,
+			);
+			name = ZKDragCellTableViewDemoTests;
+			productName = ZKDragCellTableViewDemoTests;
+			productReference = 5830DFEE1C8693180074744F /* ZKDragCellTableViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5830DFF81C8693180074744F /* ZKDragCellTableViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5830E0081C8693180074744F /* Build configuration list for PBXNativeTarget "ZKDragCellTableViewDemoUITests" */;
+			buildPhases = (
+				5830DFF51C8693180074744F /* Sources */,
+				5830DFF61C8693180074744F /* Frameworks */,
+				5830DFF71C8693180074744F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5830DFFB1C8693180074744F /* PBXTargetDependency */,
+			);
+			name = ZKDragCellTableViewDemoUITests;
+			productName = ZKDragCellTableViewDemoUITests;
+			productReference = 5830DFF91C8693180074744F /* ZKDragCellTableViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5830DFCD1C8693170074744F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ZK;
+				TargetAttributes = {
+					5830DFD41C8693170074744F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					5830DFED1C8693180074744F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 5830DFD41C8693170074744F;
+					};
+					5830DFF81C8693180074744F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 5830DFD41C8693170074744F;
+					};
+				};
+			};
+			buildConfigurationList = 5830DFD01C8693170074744F /* Build configuration list for PBXProject "ZKDragCellTableViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5830DFCC1C8693170074744F;
+			productRefGroup = 5830DFD61C8693170074744F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5830DFD41C8693170074744F /* ZKDragCellTableViewDemo */,
+				5830DFED1C8693180074744F /* ZKDragCellTableViewDemoTests */,
+				5830DFF81C8693180074744F /* ZKDragCellTableViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5830DFD31C8693170074744F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5830DFE81C8693170074744F /* LaunchScreen.storyboard in Resources */,
+				5830DFE51C8693170074744F /* Assets.xcassets in Resources */,
+				5830E0101C8693910074744F /* ZKMainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830DFEC1C8693180074744F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830DFF71C8693180074744F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5830DFD11C8693170074744F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5830DFDD1C8693170074744F /* AppDelegate.m in Sources */,
+				5830DFDA1C8693170074744F /* main.m in Sources */,
+				5830E0141C8694330074744F /* ZKDragCellTableView.m in Sources */,
+				5830E00F1C8693910074744F /* ZKMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830DFEA1C8693180074744F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5830DFF31C8693180074744F /* ZKDragCellTableViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5830DFF51C8693180074744F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5830DFFE1C8693180074744F /* ZKDragCellTableViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5830DFF01C8693180074744F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5830DFD41C8693170074744F /* ZKDragCellTableViewDemo */;
+			targetProxy = 5830DFEF1C8693180074744F /* PBXContainerItemProxy */;
+		};
+		5830DFFB1C8693180074744F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5830DFD41C8693170074744F /* ZKDragCellTableViewDemo */;
+			targetProxy = 5830DFFA1C8693180074744F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5830DFE61C8693170074744F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5830DFE71C8693170074744F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5830E0001C8693180074744F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5830E0011C8693180074744F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5830E0031C8693180074744F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZKDragCellTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoolai.ZKDragCellTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5830E0041C8693180074744F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZKDragCellTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoolai.ZKDragCellTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5830E0061C8693180074744F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZKDragCellTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoolai.ZKDragCellTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZKDragCellTableViewDemo.app/ZKDragCellTableViewDemo";
+			};
+			name = Debug;
+		};
+		5830E0071C8693180074744F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZKDragCellTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoolai.ZKDragCellTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZKDragCellTableViewDemo.app/ZKDragCellTableViewDemo";
+			};
+			name = Release;
+		};
+		5830E0091C8693180074744F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZKDragCellTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoolai.ZKDragCellTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZKDragCellTableViewDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5830E00A1C8693180074744F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZKDragCellTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoolai.ZKDragCellTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZKDragCellTableViewDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5830DFD01C8693170074744F /* Build configuration list for PBXProject "ZKDragCellTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5830E0001C8693180074744F /* Debug */,
+				5830E0011C8693180074744F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5830E0021C8693180074744F /* Build configuration list for PBXNativeTarget "ZKDragCellTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5830E0031C8693180074744F /* Debug */,
+				5830E0041C8693180074744F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5830E0051C8693180074744F /* Build configuration list for PBXNativeTarget "ZKDragCellTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5830E0061C8693180074744F /* Debug */,
+				5830E0071C8693180074744F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5830E0081C8693180074744F /* Build configuration list for PBXNativeTarget "ZKDragCellTableViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5830E0091C8693180074744F /* Debug */,
+				5830E00A1C8693180074744F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5830DFCD1C8693170074744F /* Project object */;
+}
