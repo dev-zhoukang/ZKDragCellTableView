@@ -236,6 +236,8 @@
 				TargetAttributes = {
 					5830DFD41C8693170074744F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9S49W485R2;
+						ProvisioningStyle = Automatic;
 					};
 					5830DFED1C8693180074744F = {
 						CreatedOnToolsVersion = 7.2;
@@ -434,10 +436,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9S49W485R2;
 				INFOPLIST_FILE = ZKDragCellTableViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hoolai.ZKDragCellTableViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zk.cell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -446,10 +450,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9S49W485R2;
 				INFOPLIST_FILE = ZKDragCellTableViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hoolai.ZKDragCellTableViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zk.cell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
