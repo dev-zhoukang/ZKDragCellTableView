@@ -27,6 +27,8 @@ typedef NS_ENUM(NSUInteger, SnapshotMeetsEdge) {
 
 @implementation ZKDragCellTableView
 
+@dynamic dataSource, delegate;
+
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
     if (self = [super initWithFrame:frame style:style]) {
         UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
