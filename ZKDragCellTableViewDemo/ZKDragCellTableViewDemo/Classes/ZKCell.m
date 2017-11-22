@@ -11,8 +11,7 @@
 
 @implementation ZKCell
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView
-{
++ (instancetype)cellWithTableView:(UITableView *)tableView {
     static NSString *cellID = @"ZKCell";
     ZKCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
@@ -21,15 +20,13 @@
     return cell;
 }
 
-- (void)setModel:(ZKModel *)model
-{
+- (void)setModel:(ZKModel *)model {
     _model = model;
     self.textLabel.text = model.title;
     self.backgroundColor = model.color;
 }
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
     }

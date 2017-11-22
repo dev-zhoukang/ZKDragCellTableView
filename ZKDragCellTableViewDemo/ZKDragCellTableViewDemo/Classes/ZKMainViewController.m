@@ -23,15 +23,12 @@
 
 @implementation ZKMainViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self p_setupTableView];
 }
 
-- (void)p_setupTableView
-{
+- (void)p_setupTableView {
     self.tableView = ({
         self.tableView = [[ZKDragCellTableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStyleGrouped];
         _tableView.delegate = self;
@@ -42,26 +39,22 @@
 }
 
 #pragma mark - <UITableViewDataSource>
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.dataSource.count;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.dataSource[section] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ZKCell *cell = [ZKCell cellWithTableView:tableView];
     cell.model = self.dataSource[indexPath.section][indexPath.row];
     return cell;
 }
 
 /** 数据源加载 */
-- (NSArray *)dataSource
-{
+- (NSArray *)dataSource {
     if (!_dataSource) {
         NSMutableArray *array = [NSMutableArray array];
         NSInteger numOfSecctions = 7;
@@ -82,13 +75,11 @@
 }
 
 // <ZKDragCellTableViewDataSource, ZKDragCellTableViewDelegate>
-- (NSArray *)originalDataSourceForTableView:(ZKDragCellTableView *)tableView
-{
+- (NSArray *)originalDataSourceForTableView:(ZKDragCellTableView *)tableView {
     return _dataSource;
 }
 
-- (void)tableView:(ZKDragCellTableView *)tableView newDataSource:(NSArray *)newDataSource
-{
+- (void)tableView:(ZKDragCellTableView *)tableView newDataSource:(NSArray *)newDataSource {
     self.dataSource = newDataSource;
 }
 
